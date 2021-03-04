@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <div class="accountHeader">
+      <h1>Your Farm Stand journey starts here! :)</h1>
+      <h3>Create an account as:</h3>
+      <input
+        type="radio"
+        name="account"
+        id="customer"
+        onclick="customerForm();"
+        checked
+      />
+      Customer
+      <input type="radio" name="account" id="farmer" onclick="farmerForm();" />
+      Farmer
+    </div>
+
+    <div class="show" id="formCustomer">
+      <h3>Hi customer, ready to create an account</h3>
+      <hr />
+      <div class="formCustomerSelected formCSS">
+        <label for="emailCustomer"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="emailCustomer"
+          id="emailCustomer"
+          required
+        />
+
+        <label for="usernameCustomer"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Username"
+          name="userCustomer"
+          id="userCustomer"
+          required
+        />
+
+        <label for="passCustomer"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="passCustomer"
+          id="passCustomer"
+          required
+        />
+
+        <label for="passRepeatCustomer"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="passRepeatCustomer"
+          required
+          id="passReapeatCustomer"
+        />
+
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember my account
+        </label>
+        <p>
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+        </p>
+
+        <p id="testp">test field</p>
+
+        <div class="clearfix">
+          <button type="button" name="reg" id="reg">Register</button>
+          <button type="button" class="cancelBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="show" id="formFarmer">
+      <h3>Hi farmer, ready to create an account</h3>
+      <hr />
+      <div class="formFarmerSelected formCSS">
+        <label for="emailFarmer"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="emailFarmer"
+          id="emailFarmer"
+          required
+        />
+
+        <label for="usernameFarmer"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Username"
+          name="usernameFarmer"
+          id="usernameFarmer"
+          required
+        />
+
+        <label for="farmerStore"><b>Farm stand name:</b></label>
+        <input
+          type="text"
+          class="farmerStoer"
+          id="farmerStore"
+          placeholder="Farm Stand"
+          required
+        />
+
+        <label for="passFarmer"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="passFarmer"
+          id="passFarmer"
+          required
+        />
+
+        <label for="passRepeatCustomer"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="passRepeatCustomer"
+          required
+          id="passReapeatCustomer"
+        />
+
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember my account
+        </label>
+        <p>
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+        </p>
+
+        <p id="testp">test field</p>
+
+        <div class="clearfix">
+          <button type="button" name="reg" id="reg">Register</button>
+          <button type="button" class="cancelBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

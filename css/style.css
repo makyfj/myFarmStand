@@ -1,0 +1,180 @@
+* {
+  font-family: monospace;
+  background-color: #9fb093;
+  background-image: url("../media/img/dark-green.jpg");
+  padding: 0 2px;
+  color: white;
+}
+
+/* Header section */
+.header {
+  text-align: center;
+  padding: 2vw;
+  font-size: 2vh;
+}
+
+/* Nav bar style */
+.navbar ul li {
+  list-style-type: none;
+  margin: 0 2vw;
+  padding: 0 30px;
+  font-size: 2vh;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2px;
+}
+.navbar ul li a:hover {
+  background-color: #00802b;
+}
+
+.navbar {
+  width: 100vw;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  /* flex direction: row */
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
+/* responsive website */
+@media only screen and (max-width: 500px) {
+  /* show elements in a column*/
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  /* deletes margin on top or bottom of the a tag */
+  .navbar ul li {
+    margin: 0;
+  }
+
+  /* makes sure that the a tag will make the entire screen */
+  a {
+    display: block;
+  }
+
+  /* makes the button visible */
+  ul button {
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #afe0ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    /* put the button to the left*/
+    align-self: flex-start;
+  }
+}
+
+ul button {
+  display: none;
+}
+
+.main {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.main p {
+  text-align: left;
+  padding-left: 65px;
+}
+
+.section h3 {
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+.section button {
+  padding: 3px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+}
+
+.section label {
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #3d743d;
+}
+
+/* Create Account pag and Log In*/
+.accountHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.accountHeader input {
+  margin: 0 auto;
+}
+
+.show h3 {
+  text-align: center;
+}
+
+#formCustomer {
+  display: none;
+}
+
+#formFarmer {
+  display: hidden;
+}
+
+.formCSS {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formCSS label {
+  padding: 8px 0;
+}
+
+.formCSS input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #eee;
+}
+
+.formCSS button {
+  padding: 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* using AND(&&) */
+.formCSS input:not([type="text"]):not([type="password"]) {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.formCSS button:hover {
+  background-color: #00802b;
+}

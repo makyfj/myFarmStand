@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <div class="accountHeader">
+      <h1>Welcome back!</h1>
+      <h3>Log in as:</h3>
+
+      <input
+        type="radio"
+        name="account"
+        id="customer"
+        onclick="customerForm();"
+        checked
+      />
+      Customer
+      <input type="radio" name="account" id="farmer" onclick="farmerForm();" />
+      Farmer
+    </div>
+
+    <div class="show" id="formCustomer">
+      <h3>Hi customer, ready to log in</h3>
+      <hr />
+      <div class="formCustomerSelected formCSS">
+        <label for="usernameCustomer"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Username"
+          name="userCustomer"
+          id="userCustomer"
+          required
+        />
+
+        <label for="passCustomer"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="passCustomer"
+          id="passCustomer"
+          required
+        />
+
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember my account
+        </label>
+
+        <p id="testp">test field</p>
+
+        <div class="clearfix">
+          <button type="button" name="reg" id="reg">Log In</button>
+          <button type="button" class="cancelBtn">Forgot my password</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="show" id="formFarmer">
+      <h3>Hi farmer, ready to log in</h3>
+      <hr />
+      <div class="formFarmerSelected formCSS">
+        <label for="usernameFarmer"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Username"
+          name="usernameFarmer"
+          id="usernameFarmer"
+          required
+        />
+
+        <label for="passFarmer"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="passFarmer"
+          id="passFarmer"
+          required
+        />
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember my account
+        </label>
+
+        <p id="testp">test field</p>
+
+        <div class="clearfix">
+          <button type="button" name="logIn" id="logIn">Log In</button>
+          <button type="button" class="forgotPassword">
+            Forgot my password
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
